@@ -1,48 +1,22 @@
 # Guia de contribuição
 
-Este documento reúne as práticas iniciais para colaborar no projeto. O fluxo poderá ser ajustado pela equipe durante a Etapa 1.
+Para manter o projeto organizado:
 
-## Antes de começar
+1. Antes de começar, atualize o repositório.
+2. Trabalhe apenas na parte que foi combinada com o grupo.
+3. Faça commits com mensagens claras.
+4. Evite alterar arquivos de outras pessoas sem avisar.
+5. Antes de enviar uma mudança importante, revise o que foi feito.
+6. Em caso de dúvida ou mudança no projeto, avise no grupo.
 
-1. Atualize sua cópia local da branch principal.
-2. Consulte o planejamento e escolha uma tarefa definida pelo grupo.
-3. Crie uma branch específica para a alteração.
-
-## Branches
-
-Use nomes curtos que indiquem o tipo e o objetivo do trabalho:
-
-```text
-docs/descrever-problema
-feat/cadastrar-chamado
-fix/validar-prioridade
-```
-
-Durante a Etapa 1, a maioria das alterações usará o prefixo `docs/`. Os prefixos `feat/` e `fix/` serão usados quando o desenvolvimento começar.
-
-## Commits
-
-Cada commit deve representar uma alteração coerente e ter uma mensagem objetiva, preferencialmente no infinitivo:
+## Exemplos de commits
 
 ```text
-docs: descrever objetivo do projeto
-feat: adicionar cadastro de chamados
-fix: corrigir filtro por status
+docs: adiciona objetivo do projeto
+feat: adiciona cadastro de chamados
+fix: corrige validação do formulário
 ```
 
-Evite mensagens genéricas como `alterações`, `ajustes` ou `final`.
+Durante a primeira etapa, o foco será principalmente na documentação.
 
-## Pull Requests
-
-Antes de abrir um Pull Request:
-
-- revise os arquivos alterados;
-- confirme que a mudança atende à tarefa;
-- execute os testes aplicáveis;
-- atualize a documentação quando necessário.
-
-No Pull Request, descreva o que mudou, por que a mudança foi necessária e como ela foi verificada. Pelo menos outro integrante deve revisar a alteração antes do merge.
-
-## Decisões do grupo
-
-Decisões que afetem escopo, tecnologias ou organização devem ser registradas em [`docs/decisoes.md`](docs/decisoes.md).
+Na segunda etapa, o grupo poderá usar branches e Pull Requests conforme a necessidade.
