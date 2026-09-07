@@ -1,11 +1,13 @@
 # Sistema de Chamados de TI
 
-![Projeto Integrador](https://img.shields.io/badge/Projeto-Integrador-0B5CAD)
-![Status: Etapa 1 - Planejamento](https://img.shields.io/badge/status-Etapa_1_%7C_Planejamento-F2C94C)
-![HTML5](https://img.shields.io/badge/HTML5-previsto-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-previsto-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-previsto-F7DF1E?logo=javascript&logoColor=black)
-![GitHub](https://img.shields.io/badge/GitHub-colabora%C3%A7%C3%A3o-181717?logo=github&logoColor=white)
+<p>
+  <img src="https://img.shields.io/badge/Projeto-Integrador-0B5CAD" height="28" alt="Projeto Integrador">
+  <img src="https://img.shields.io/badge/status-Etapa_1_%7C_Planejamento-F2C94C" height="28" alt="Status: Etapa 1 - Planejamento">
+  <img src="https://img.shields.io/badge/HTML5-previsto-E34F26?logo=html5&amp;logoColor=white" height="28" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-previsto-1572B6?logo=css3&amp;logoColor=white" height="28" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-previsto-F7DF1E?logo=javascript&amp;logoColor=black" height="28" alt="JavaScript">
+  <img src="https://img.shields.io/badge/GitHub-colabora%C3%A7%C3%A3o-181717?logo=github&amp;logoColor=white" height="28" alt="GitHub">
+</p>
 
 > **Status atual:** Etapa 1 — Planejamento  
 > O desenvolvimento da aplicação está previsto para a segunda etapa do projeto.
