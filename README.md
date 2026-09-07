@@ -1,15 +1,12 @@
 # Sistema de Chamados de TI
 
-<p>
-  <img src="https://img.shields.io/badge/Projeto-Integrador-0B5CAD?style=for-the-badge" height="34" alt="Projeto Integrador">
-  <img src="https://img.shields.io/badge/status-Etapa_1_%7C_Planejamento-F2C94C?style=for-the-badge" height="34" alt="Status: Etapa 1 - Planejamento">
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/HTML5-previsto-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" height="34" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-previsto-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" height="34" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-previsto-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" height="34" alt="JavaScript">
-  <img src="https://img.shields.io/badge/GitHub-colabora%C3%A7%C3%A3o-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="34" alt="GitHub">
+<p align="center">
+  <img src="https://img.shields.io/badge/Projeto_Integrador-0B5CAD?style=for-the-badge" height="32" alt="Projeto Integrador">
+  <img src="https://img.shields.io/badge/Etapa_1-Planejamento-F2C94C?style=for-the-badge" height="32" alt="Etapa 1: Planejamento">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" height="32" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" height="32" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" height="32" alt="JavaScript">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="32" alt="GitHub">
 </p>
 
 > **Status atual:** Etapa 1 — Planejamento  
