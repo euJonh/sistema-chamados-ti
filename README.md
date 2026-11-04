@@ -129,7 +129,7 @@ A implementação foi dividida em áreas para facilitar o desenvolvimento em gru
 | Edição e exclusão | A definir |
 | Status, prioridade e filtros | João Vitor Oliveira Goncalves |
 | Testes e validações | Igor Fagundes Batista |
-| Documentação e GitHub | Rafael Pereira Caires Pires |
+| Documentação e GitHub | A definir |
 
 A divisão poderá ser ajustada conforme o desenvolvimento e a disponibilidade dos integrantes.
 
