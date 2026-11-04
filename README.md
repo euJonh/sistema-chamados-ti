@@ -1,148 +1,152 @@
+<div align="center">
+
 # Sistema de Chamados de TI
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Projeto_Integrador-0B5CAD?style=for-the-badge" height="32" alt="Projeto Integrador">
-  <img src="https://img.shields.io/badge/Etapa_1-Planejamento-F2C94C?style=for-the-badge" height="32" alt="Etapa 1: Planejamento">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" height="32" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" height="32" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" height="32" alt="JavaScript">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="32" alt="GitHub">
+Aplicação web para registrar e acompanhar solicitações de suporte técnico.
+
+<p>
+  <img alt="Status" src="https://img.shields.io/badge/status-em%20desenvolvimento-f59e0b?style=for-the-badge">
+  <img alt="Projeto Integrador" src="https://img.shields.io/badge/projeto-integrador-0B5CAD?style=for-the-badge">
+  <img alt="Etapa 2" src="https://img.shields.io/badge/etapa%202-desenvolvimento-7c3aed?style=for-the-badge">
 </p>
 
-> **Status atual:** Etapa 1 — Planejamento  
-> O desenvolvimento da aplicação está previsto para a segunda etapa do projeto.
+Projeto Integrador de **Boas Práticas de Desenvolvimento de Software**  
+Análise e Desenvolvimento de Sistemas — Senac
 
-## Visão geral
+</div>
 
-Este repositório reúne o planejamento e, futuramente, o desenvolvimento do **Sistema de Chamados de TI**, Projeto Integrador da disciplina **Boas Práticas de Desenvolvimento de Software**, do curso de Análise e Desenvolvimento de Sistemas do Senac.
+## Sobre
 
-Nesta primeira etapa, a equipe está definindo o problema, os requisitos, o escopo e a organização do trabalho. Ainda não há código da aplicação.
+O projeto surgiu da necessidade de organizar solicitações de suporte de TI que muitas vezes são feitas por mensagens, ligações ou diretamente para a equipe responsável.
 
-## O problema
+A proposta é reunir essas solicitações em uma aplicação web onde seja possível cadastrar e acompanhar chamados, visualizar sua prioridade e atualizar o andamento do atendimento.
 
-Solicitações de suporte feitas por mensagens ou verbalmente podem ser difíceis de organizar e acompanhar. O grupo está elaborando a descrição definitiva desse problema e de seus impactos para a primeira entrega.
+A primeira etapa do Projeto Integrador foi dedicada ao planejamento. Nesta segunda etapa, o grupo está desenvolvendo a aplicação.
 
-> Conteúdo em elaboração durante a Etapa 1.
+## Funcionalidades
 
-## Como imaginamos a solução
+A primeira versão prevê:
 
-Planejamos criar uma aplicação web simples para registrar e acompanhar chamados de TI, permitindo consultar cada solicitação e atualizar sua prioridade e seu status.
+- cadastro de chamados;
+- listagem e consulta;
+- edição e exclusão;
+- prioridade baixa, média ou alta;
+- status aberto, em atendimento ou resolvido;
+- pesquisa e filtros;
+- registro de prazo para atendimento.
+
+O fluxo principal será:
 
 ```text
-Usuário registra o chamado
-            ↓
-Chamado é armazenado localmente
-            ↓
-Chamado pode ser consultado
-            ↓
-Prioridade e status podem ser atualizados
-            ↓
-Chamado é resolvido
+Novo chamado
+    ↓
+Armazenamento
+    ↓
+Consulta
+    ↓
+Atendimento
+    ↓
+Resolvido
 ```
 
-## Escopo da primeira versão
+## Tecnologias
 
-| Funcionalidade | Situação |
-| --- | --- |
-| Cadastro de chamados | Planejado |
-| Listagem de chamados | Planejado |
-| Edição de chamados | Planejado |
-| Exclusão de chamados | Planejado |
-| Pesquisa de chamados | Planejado |
-| Definição de prioridade | Planejado |
-| Alteração de status | Planejado |
-| Filtros de chamados | Planejado |
-
-As prioridades previstas são **Baixa**, **Média** e **Alta**. Os status previstos são **Aberto**, **Em atendimento** e **Resolvido**. O escopo poderá ser ajustado ao longo da Etapa 1, conforme o grupo concluir o levantamento dos requisitos.
-
-## Tecnologias previstas
-
-| Tecnologia | Uso no projeto |
+| Tecnologia | Uso |
 | --- | --- |
 | HTML5 | Estrutura das páginas |
-| CSS3 | Interface e apresentação visual |
-| JavaScript | Regras e interações da aplicação |
-| LocalStorage | Persistência local dos chamados |
-| Git | Controle de versão |
-| GitHub | Colaboração e documentação |
+| CSS3 | Interface |
+| JavaScript | Funcionalidades e regras da aplicação |
+| LocalStorage | Armazenamento dos chamados no navegador |
+| Git e GitHub | Versionamento e colaboração |
+
+Nesta versão não será utilizado backend. Os registros serão armazenados no `localStorage` do navegador.
+
+Por isso, os dados ficam associados ao navegador e ao endereço em que a aplicação está sendo executada e não são compartilhados entre usuários ou dispositivos.
+
+## Como executar
+
+O projeto não exige instalação de dependências.
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/rafaelcairess/sistema-chamados-ti.git
+```
+
+Entre na pasta:
+
+```bash
+cd sistema-chamados-ti
+```
+
+Depois, abra o arquivo `index.html` no navegador.
+
+## Estrutura
+
+A estrutura poderá mudar durante o desenvolvimento.
+
+```text
+sistema-chamados-ti/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   ├── storage.js
+│   └── validation.js
+├── assets/
+├── docs/
+├── CONTRIBUTING.md
+└── README.md
+```
 
 ## Equipe
 
-| Integrante | GitHub | Participação |
+| Integrante | GitHub | Responsabilidade |
 | --- | --- | --- |
-| Antonio | A definir | Etapa 1 / a definir |
-| Sheila | A definir | Etapa 1 / a definir |
-| Igor | A definir | Etapa 1 / a definir |
-| Herica | A definir | Etapa 1 / a definir |
-| Vitor | A definir | Etapa 1 / a definir |
-| Mateus | A definir | Etapa 1 / a definir |
-| Rafael | [@rafaelcairess](https://github.com/rafaelcairess) | Etapa 1 / a definir |
-| Joao | A definir | Etapa 1 / a definir |
+| Antonio Agricola Dorneles | A definir | A definir |
+| Sheila Cristina Zanin | A definir | A definir |
+| Igor Fagundes Batista | A definir | A definir |
+| Herica Franklin Ramalho | A definir | A definir |
+| Vitor Hugo Benatti Pedrassolli | A definir | A definir |
+| Mateus Malezan Tasquetto | A definir | A definir |
+| Rafael Pereira Caires Pires | [@rafaelcairess](https://github.com/rafaelcairess) | HTML, CSS e GitHub |
+| Joao Vitor Oliveira Goncalves | A definir | A definir |
 
-## Organização do desenvolvimento
+As responsabilidades serão atualizadas conforme a divisão das tarefas da segunda etapa.
 
-A equipe pretende usar Git e GitHub para manter o trabalho organizado e revisável. O fluxo adotará:
+## Andamento
 
-- branches por tarefa ou funcionalidade;
-- commits claros e objetivos;
-- Pull Requests para integrar alterações;
-- revisão antes do merge;
-- registro das decisões relevantes;
-- testes antes da conclusão de cada funcionalidade.
-
-As orientações iniciais estão no [guia de contribuição](CONTRIBUTING.md).
-
-### Estrutura do repositório
-
-```text
-/
-├── README.md
-├── CONTRIBUTING.md
-├── docs/
-│   ├── etapa-1.md
-│   ├── requisitos.md
-│   ├── planejamento.md
-│   └── decisoes.md
-└── src/
-    └── README.md
-```
-
-O diretório `src/` está reservado para a Etapa 2 e ainda não contém código da aplicação.
-
-## Roadmap
-
-### Etapa 1 — Planejamento
+### Etapa 1
 
 - [x] Definição do tema
-- [ ] Descrição do problema
-- [ ] Definição do objetivo
-- [ ] Validação das funcionalidades
-- [x] Tecnologias previstas
-- [ ] Planejamento da segunda etapa
-- [ ] Definição do resultado esperado
-- [ ] PDF da primeira entrega
+- [x] Definição do problema
+- [x] Objetivo do sistema
+- [x] Levantamento das funcionalidades
+- [x] Escolha das tecnologias
+- [x] Planejamento da implementação
+- [x] Primeira entrega
 
-### Etapa 2 — Desenvolvimento
+### Etapa 2
 
 - [ ] Estrutura HTML
 - [ ] Interface CSS
-- [ ] Lógica JavaScript
-- [ ] Persistência com LocalStorage
+- [ ] Cadastro de chamados
+- [ ] Armazenamento com LocalStorage
+- [ ] Listagem dos chamados
+- [ ] Edição e exclusão
+- [ ] Status, prioridade e filtros
 - [ ] Validações
 - [ ] Testes
-- [ ] Documentação
-- [ ] Revisão final
+- [ ] Documentação final
 
 ## Documentação
 
-- [Etapa 1](docs/etapa-1.md) — tema, problema, objetivo e resultado esperado
-- [Requisitos](docs/requisitos.md) — requisitos funcionais provisórios
-- [Planejamento](docs/planejamento.md) — futura divisão das frentes de trabalho
-- [Registro de decisões](docs/decisoes.md) — histórico das decisões do grupo
-- [Guia de contribuição](CONTRIBUTING.md) — práticas para colaborar no repositório
+Os materiais de planejamento e desenvolvimento ficam na pasta [`docs`](docs/).
 
-## Situação do projeto
+- [Etapa 1](docs/etapa-1.md)
+- [Requisitos](docs/requisitos.md)
+- [Planejamento](docs/planejamento.md)
+- [Decisões do projeto](docs/decisoes.md)
 
-**Projeto atualmente em: Etapa 1 — Planejamento.**
-
-O desenvolvimento da aplicação ainda não foi iniciado.
+As orientações para alterações no repositório estão em [`CONTRIBUTING.md`](CONTRIBUTING.md).
