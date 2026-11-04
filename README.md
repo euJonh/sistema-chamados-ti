@@ -61,7 +61,7 @@ Resolvido
 
 Nesta versão não será utilizado backend. Os registros serão armazenados no `localStorage` do navegador.
 
-Por isso, os dados ficam associados ao navegador e ao endereço em que a aplicação está sendo executada e não são compartilhados entre usuários ou dispositivos.
+Por isso, os dados ficam associados ao navegador e ao endereço em que a aplicação está sendo executada e não são compartilhados automaticamente entre diferentes usuários ou dispositivos.
 
 ## Como executar
 
@@ -81,9 +81,11 @@ cd sistema-chamados-ti
 
 Depois, abra o arquivo `index.html` no navegador.
 
+Durante o desenvolvimento também pode ser utilizado um servidor local, como o Live Server do Visual Studio Code.
+
 ## Estrutura
 
-A estrutura poderá mudar durante o desenvolvimento.
+A estrutura poderá mudar conforme o desenvolvimento avançar.
 
 ```text
 sistema-chamados-ti/
@@ -105,15 +107,31 @@ sistema-chamados-ti/
 | Integrante | GitHub | Responsabilidade |
 | --- | --- | --- |
 | Antonio Agricola Dorneles | A definir | A definir |
-| Sheila Cristina Zanin | A definir | A definir |
-| Igor Fagundes Batista | A definir | A definir |
+| Sheila Cristina Zanin | A definir | Listagem dos chamados |
+| Igor Fagundes Batista | A definir | Testes e validações |
 | Herica Franklin Ramalho | A definir | A definir |
 | Vitor Hugo Benatti Pedrassolli | A definir | A definir |
 | Mateus Malezan Tasquetto | A definir | A definir |
 | Rafael Pereira Caires Pires | [@rafaelcairess](https://github.com/rafaelcairess) | HTML, CSS e GitHub |
-| Joao Vitor Oliveira Goncalves | A definir | A definir |
+| João Vitor Oliveira Goncalves | A definir | Status, prioridade e filtros |
 
-As responsabilidades serão atualizadas conforme a divisão das tarefas da segunda etapa.
+As responsabilidades serão atualizadas conforme os demais integrantes escolherem suas partes.
+
+## Divisão da Etapa 2
+
+A implementação foi dividida em áreas para facilitar o desenvolvimento em grupo.
+
+| Área | Responsável |
+| --- | --- |
+| HTML e CSS | Rafael Pereira Caires Pires |
+| Cadastro | A definir |
+| Listagem | Sheila Cristina Zanin |
+| Edição e exclusão | A definir |
+| Status, prioridade e filtros | João Vitor Oliveira Goncalves |
+| Testes e validações | Igor Fagundes Batista |
+| Documentação e GitHub | Rafael Pereira Caires Pires |
+
+A divisão poderá ser ajustada conforme o desenvolvimento e a disponibilidade dos integrantes.
 
 ## Andamento
 
@@ -138,7 +156,29 @@ As responsabilidades serão atualizadas conforme a divisão das tarefas da segun
 - [ ] Status, prioridade e filtros
 - [ ] Validações
 - [ ] Testes
+- [ ] Captura das telas
 - [ ] Documentação final
+- [ ] Revisão do projeto
+- [ ] Segunda entrega
+
+## Testes
+
+Durante o desenvolvimento serão verificados os principais fluxos da aplicação.
+
+Entre eles:
+
+| Teste | Resultado esperado |
+| --- | --- |
+| Cadastro de chamado | O chamado deve ser salvo e exibido |
+| Campos obrigatórios vazios | O cadastro deve ser bloqueado |
+| Listagem | Os chamados salvos devem ser exibidos |
+| Edição | As alterações devem permanecer salvas |
+| Exclusão | O chamado deve ser removido |
+| Alteração de prioridade | A nova prioridade deve permanecer salva |
+| Alteração de status | O novo status deve permanecer salvo |
+| Pesquisa e filtros | Apenas os chamados correspondentes devem ser exibidos |
+
+Os resultados serão registrados quando os testes forem realizados.
 
 ## Documentação
 
