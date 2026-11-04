@@ -107,7 +107,7 @@ sistema-chamados-ti/
 | Integrante | GitHub | Responsabilidade |
 | --- | --- | --- |
 | Antonio Agricola Dorneles | A definir | A definir |
-| Sheila Cristina Zanin | [@sheilazanin-png](https://github.com/sheilazanin) | Listagem dos chamados |
+| Sheila Cristina Zanin | [@sheilazanin](https://github.com/sheilazanin-png) | Listagem dos chamados |
 | Igor Fagundes Batista | A definir | Testes e validações |
 | Herica Franklin Ramalho | A definir | A definir |
 | Vitor Hugo Benatti Pedrassolli | A definir | A definir |
