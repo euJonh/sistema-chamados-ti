@@ -107,15 +107,15 @@ sistema-chamados-ti/
 | Integrante | GitHub | Responsabilidade |
 | --- | --- | --- |
 | Antonio Agricola Dorneles | A definir | A definir |
-| Sheila Cristina Zanin | [@sheilazanin](https://github.com/sheilazanin-png) | Listagem dos chamados |
+| Sheila Cristina Zanin | [@sheilazanin-png](https://github.com/sheilazanin-png) | Listagem dos chamados |
 | Igor Fagundes Batista | A definir | Testes e validações |
-| Herica Franklin Ramalho | A definir | A definir |
+| Herica Franklin Ramalho | A definir | Documentação |
 | Vitor Hugo Benatti Pedrassolli | A definir | A definir |
-| Mateus Malezan Tasquetto | A definir | A definir |
+| Mateus Malezan Tasquetto | A definir | Cadastro de chamados |
 | Rafael Pereira Caires Pires | [@rafaelcairess](https://github.com/rafaelcairess) | HTML, CSS e GitHub |
 | João Vitor Oliveira Goncalves | A definir | Status, prioridade e filtros |
 
-As responsabilidades serão atualizadas conforme os demais integrantes escolherem suas partes.
+As responsabilidades e os perfis do GitHub serão atualizados conforme os demais integrantes enviarem suas informações.
 
 ## Divisão da Etapa 2
 
@@ -124,12 +124,13 @@ A implementação foi dividida em áreas para facilitar o desenvolvimento em gru
 | Área | Responsável |
 | --- | --- |
 | HTML e CSS | Rafael Pereira Caires Pires |
-| Cadastro | A definir |
+| Cadastro | Mateus Malezan Tasquetto |
 | Listagem | Sheila Cristina Zanin |
 | Edição e exclusão | A definir |
 | Status, prioridade e filtros | João Vitor Oliveira Goncalves |
 | Testes e validações | Igor Fagundes Batista |
-| Documentação e GitHub | A definir |
+| Documentação | Herica Franklin Ramalho |
+| Organização do GitHub | Rafael Pereira Caires Pires |
 
 A divisão poderá ser ajustada conforme o desenvolvimento e a disponibilidade dos integrantes.
 
@@ -164,8 +165,6 @@ A divisão poderá ser ajustada conforme o desenvolvimento e a disponibilidade d
 ## Testes
 
 Durante o desenvolvimento serão verificados os principais fluxos da aplicação.
-
-Entre eles:
 
 | Teste | Resultado esperado |
 | --- | --- |
