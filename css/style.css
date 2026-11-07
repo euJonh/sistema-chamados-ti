@@ -91,6 +91,8 @@ a:focus-visible,
 }
 
 .main-navigation__list {
+  display: grid;
+  gap: 0.25rem;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -124,9 +126,14 @@ a:focus-visible,
   border-radius: 0.5rem;
 }
 
-.content-section h1 {
+.content-section h1,
+.content-section h2 {
   margin: 0;
   font-size: 1.75rem;
+}
+
+.content-section + .content-section {
+  margin-top: 1.5rem;
 }
 
 .content-section__description {
@@ -171,6 +178,77 @@ a:focus-visible,
   text-align: center;
 }
 
+/* Formulário de chamado */
+.ticket-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.75rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+  border-color: var(--color-primary);
+  outline: 0.1875rem solid #b8d7f3;
+  outline-offset: 0;
+}
+
+.ticket-form__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary-button {
+  padding: 0.75rem 1.25rem;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.25rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.primary-button:focus-visible {
+  outline: 0.1875rem solid #f59e0b;
+  outline-offset: 0.1875rem;
+}
+
 /* Adaptação para telas menores */
 @media (max-width: 43.75rem) {
   .app-header {
@@ -194,5 +272,17 @@ a:focus-visible,
 
   .content-section {
     padding: 1.5rem;
+  }
+
+  .ticket-form {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-form__actions {
+    justify-content: stretch;
+  }
+
+  .primary-button {
+    width: 100%;
   }
 }

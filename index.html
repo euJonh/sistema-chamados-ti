@@ -34,6 +34,9 @@
               Chamados
             </a>
           </li>
+          <li>
+            <a class="main-navigation__link" href="#novo-chamado">Novo chamado</a>
+          </li>
         </ul>
       </nav>
 
@@ -73,6 +76,59 @@
               </tbody>
             </table>
           </div>
+        </section>
+
+        <!-- Formulário de cadastro -->
+        <section
+          id="novo-chamado"
+          class="content-section"
+          aria-labelledby="form-title"
+        >
+          <h2 id="form-title">Novo chamado</h2>
+          <p class="content-section__description">
+            Informe os dados da solicitação de suporte.
+          </p>
+
+          <form id="form-chamado" class="ticket-form">
+            <div class="form-field form-field--full">
+              <label for="titulo">Título</label>
+              <input id="titulo" name="titulo" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="solicitante">Solicitante</label>
+              <input id="solicitante" name="solicitante" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="categoria">Categoria</label>
+              <input id="categoria" name="categoria" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="prioridade">Prioridade</label>
+              <select id="prioridade" name="prioridade">
+                <option value="">Selecione</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="prazo">Prazo</label>
+              <input id="prazo" name="prazo" type="date" />
+            </div>
+
+            <div class="form-field form-field--full">
+              <label for="descricao">Descrição</label>
+              <textarea id="descricao" name="descricao" rows="5"></textarea>
+            </div>
+
+            <div class="ticket-form__actions form-field--full">
+              <button class="primary-button" type="submit">Salvar chamado</button>
+            </div>
+          </form>
         </section>
       </main>
     </div>
