@@ -141,6 +141,48 @@ a:focus-visible,
   color: var(--color-text-light);
 }
 
+/* Pesquisa e filtros */
+.ticket-filters {
+  display: grid;
+  grid-template-columns: minmax(16rem, 2fr) repeat(2, minmax(10rem, 1fr)) auto;
+  gap: 1rem;
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.filter-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.filter-field label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.filter-field input,
+.filter-field select {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.625rem 0.75rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.filter-field input:focus-visible,
+.filter-field select:focus-visible {
+  border-color: var(--color-primary);
+  outline: 0.1875rem solid #b8d7f3;
+  outline-offset: 0;
+}
+
+.ticket-filters__button {
+  min-height: 3rem;
+}
+
 /* Lista de chamados */
 .table-container {
   margin-top: 2rem;
@@ -272,6 +314,14 @@ a:focus-visible,
 
   .content-section {
     padding: 1.5rem;
+  }
+
+  .ticket-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-filters__button {
+    width: 100%;
   }
 
   .ticket-form {

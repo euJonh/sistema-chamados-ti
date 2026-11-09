@@ -48,6 +48,48 @@
             Lista de chamados de suporte de TI.
           </p>
 
+          <!-- Pesquisa e filtros: a lógica será adicionada em JavaScript -->
+          <form
+            id="filtros-chamados"
+            class="ticket-filters"
+            role="search"
+            aria-label="Pesquisa e filtros de chamados"
+          >
+            <div class="filter-field">
+              <label for="busca-chamados">Pesquisar chamados</label>
+              <input
+                id="busca-chamados"
+                name="busca"
+                type="search"
+                placeholder="Digite para pesquisar"
+              />
+            </div>
+
+            <div class="filter-field">
+              <label for="filtro-status">Status</label>
+              <select id="filtro-status" name="status">
+                <option value="">Todos</option>
+                <option value="aberto">Aberto</option>
+                <option value="em-atendimento">Em atendimento</option>
+                <option value="resolvido">Resolvido</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label for="filtro-prioridade">Prioridade</label>
+              <select id="filtro-prioridade" name="prioridade">
+                <option value="">Todas</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <button class="primary-button ticket-filters__button" type="submit">
+              Pesquisar
+            </button>
+          </form>
+
           <!-- Estrutura da lista de chamados -->
           <div
             class="table-container"
