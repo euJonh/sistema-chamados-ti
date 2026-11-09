@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Sistema para registrar e acompanhar chamados de suporte de TI."
-    />
+    >
 
     <title>Sistema de Chamados de TI</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -27,9 +27,8 @@
         <ul class="main-navigation__list">
           <li>
             <a
-              class="main-navigation__link main-navigation__link--active"
+              class="main-navigation__link"
               href="#chamados"
-              aria-current="page"
             >
               Chamados
             </a>
@@ -62,7 +61,7 @@
                 name="busca"
                 type="search"
                 placeholder="Digite para pesquisar"
-              />
+              >
             </div>
 
             <div class="filter-field">
@@ -91,10 +90,14 @@
           </form>
 
           <!-- Estrutura da lista de chamados -->
-          <div
+          <p id="table-help" class="visually-hidden">
+            Em telas pequenas, role a tabela horizontalmente para visualizar todas as
+            colunas.
+          </p>
+          <section
             class="table-container"
-            role="region"
             aria-labelledby="table-title"
+            aria-describedby="table-help"
             tabindex="0"
           >
             <table class="tickets-table">
@@ -118,7 +121,7 @@
                 </tr>
               </tbody>
             </table>
-          </div>
+          </section>
 
           <!-- Modelo usado futuramente pela listagem em JavaScript -->
           <template id="modelo-linha-chamado">
@@ -168,7 +171,7 @@
           </p>
 
           <form id="form-chamado" class="ticket-form">
-            <input id="id-chamado" name="id" type="hidden" />
+            <input id="id-chamado" name="id" type="hidden">
 
             <div class="form-field form-field--full">
               <label for="titulo">
@@ -180,7 +183,7 @@
                 type="text"
                 aria-describedby="erro-titulo"
                 required
-              />
+              >
               <span id="erro-titulo" class="form-field__error" aria-live="polite">
                 Informe o título.
               </span>
@@ -196,7 +199,7 @@
                 type="text"
                 aria-describedby="erro-solicitante"
                 required
-              />
+              >
               <span
                 id="erro-solicitante"
                 class="form-field__error"
@@ -258,7 +261,7 @@
 
             <div class="form-field">
               <label for="prazo">Prazo</label>
-              <input id="prazo" name="prazo" type="date" />
+              <input id="prazo" name="prazo" type="date">
             </div>
 
             <div class="form-field form-field--full">
@@ -317,6 +320,7 @@
           class="secondary-button"
           type="submit"
           value="cancelar"
+          autofocus
         >
           Cancelar
         </button>
