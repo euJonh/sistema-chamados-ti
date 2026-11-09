@@ -107,17 +107,50 @@
                   <th scope="col">Título</th>
                   <th scope="col">Prioridade</th>
                   <th scope="col">Status</th>
+                  <th scope="col">Ações</th>
                 </tr>
               </thead>
               <tbody id="lista-chamados">
                 <tr>
-                  <td class="tickets-table__empty" colspan="4">
+                  <td class="tickets-table__empty" colspan="5">
                     Nenhum chamado cadastrado.
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
+
+          <!-- Modelo usado futuramente pela listagem em JavaScript -->
+          <template id="modelo-linha-chamado">
+            <tr>
+              <td class="ticket-number"></td>
+              <td class="ticket-title"></td>
+              <td>
+                <span class="ticket-badge" data-prioridade></span>
+              </td>
+              <td>
+                <span class="ticket-badge" data-status></span>
+              </td>
+              <td>
+                <div class="ticket-actions">
+                  <button
+                    class="action-button action-button--edit"
+                    type="button"
+                    data-action="editar"
+                  >
+                    Editar
+                  </button>
+                  <button
+                    class="action-button action-button--delete"
+                    type="button"
+                    data-action="excluir"
+                  >
+                    Excluir
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </template>
         </section>
 
         <!-- Formulário de cadastro -->
@@ -174,5 +207,37 @@
         </section>
       </main>
     </div>
+
+    <!-- Confirmação usada futuramente pela exclusão em JavaScript -->
+    <dialog
+      id="confirmacao-exclusao"
+      class="confirmation-dialog"
+      aria-labelledby="confirmation-title"
+      aria-describedby="confirmation-description"
+    >
+      <h2 id="confirmation-title">Excluir chamado?</h2>
+      <p id="confirmation-description">
+        Esta ação removerá o chamado selecionado.
+      </p>
+
+      <form class="confirmation-dialog__actions" method="dialog">
+        <button
+          id="cancelar-exclusao"
+          class="secondary-button"
+          type="submit"
+          value="cancelar"
+        >
+          Cancelar
+        </button>
+        <button
+          id="confirmar-exclusao"
+          class="danger-button"
+          type="submit"
+          value="confirmar"
+        >
+          Excluir
+        </button>
+      </form>
+    </dialog>
   </body>
 </html>

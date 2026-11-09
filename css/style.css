@@ -7,6 +7,8 @@
   --color-text: #1f2937;
   --color-text-light: #5f6b7a;
   --color-border: #d9e0e7;
+  --color-danger: #b42318;
+  --color-danger-dark: #7a271a;
   --navigation-width: 15rem;
 }
 
@@ -192,7 +194,7 @@ a:focus-visible,
 
 .tickets-table {
   width: 100%;
-  min-width: 36rem;
+  min-width: 46rem;
   border-collapse: collapse;
   background-color: var(--color-surface);
 }
@@ -218,6 +220,141 @@ a:focus-visible,
 .tickets-table .tickets-table__empty {
   color: var(--color-text-light);
   text-align: center;
+}
+
+.ticket-badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ticket-badge[data-prioridade="baixa"] {
+  color: #285231;
+  background-color: #e7f4e8;
+}
+
+.ticket-badge[data-prioridade="media"] {
+  color: #694f00;
+  background-color: #fff3cd;
+}
+
+.ticket-badge[data-prioridade="alta"] {
+  color: #8a1c13;
+  background-color: #fde8e7;
+}
+
+.ticket-badge[data-status="aberto"] {
+  color: #084780;
+  background-color: #e8f1fa;
+}
+
+.ticket-badge[data-status="em-atendimento"] {
+  color: #5b3d8a;
+  background-color: #f0eafa;
+}
+
+.ticket-badge[data-status="resolvido"] {
+  color: #285231;
+  background-color: #e7f4e8;
+}
+
+.ticket-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 0.375rem 0.625rem;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.action-button--edit {
+  color: var(--color-primary-dark);
+}
+
+.action-button--delete {
+  color: var(--color-danger);
+}
+
+.action-button:hover {
+  background-color: var(--color-background);
+}
+
+.action-button:focus-visible,
+.secondary-button:focus-visible,
+.danger-button:focus-visible {
+  outline: 0.1875rem solid #f59e0b;
+  outline-offset: 0.1875rem;
+}
+
+/* Confirmação de exclusão */
+.confirmation-dialog {
+  width: min(28rem, calc(100% - 2rem));
+  padding: 1.5rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+.confirmation-dialog::backdrop {
+  background-color: rgb(31 41 55 / 60%);
+}
+
+.confirmation-dialog h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.confirmation-dialog p {
+  margin: 0.75rem 0 0;
+  color: var(--color-text-light);
+}
+
+.confirmation-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.secondary-button,
+.danger-button {
+  padding: 0.625rem 1rem;
+  border-radius: 0.25rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondary-button {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.danger-button {
+  color: var(--color-surface);
+  background-color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+}
+
+.secondary-button:hover {
+  background-color: var(--color-background);
+}
+
+.danger-button:hover {
+  background-color: var(--color-danger-dark);
+  border-color: var(--color-danger-dark);
 }
 
 /* Formulário de chamado */
