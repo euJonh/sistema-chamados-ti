@@ -143,6 +143,18 @@ a:focus-visible,
   color: var(--color-text-light);
 }
 
+.form-required-note {
+  margin: 1rem 0 0;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.required-marker,
+.form-required-note span {
+  color: var(--color-danger);
+  font-weight: 700;
+}
+
 /* Pesquisa e filtros */
 .ticket-filters {
   display: grid;
@@ -394,6 +406,13 @@ a:focus-visible,
   resize: vertical;
 }
 
+.form-field__error {
+  display: none;
+  color: var(--color-danger);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
 .form-field input:focus-visible,
 .form-field select:focus-visible,
 .form-field textarea:focus-visible {
@@ -402,8 +421,25 @@ a:focus-visible,
   outline-offset: 0;
 }
 
+.form-field input:user-invalid,
+.form-field select:user-invalid,
+.form-field textarea:user-invalid,
+.form-field--error input,
+.form-field--error select,
+.form-field--error textarea {
+  border-color: var(--color-danger);
+}
+
+.form-field input:user-invalid ~ .form-field__error,
+.form-field select:user-invalid ~ .form-field__error,
+.form-field textarea:user-invalid ~ .form-field__error,
+.form-field--error .form-field__error {
+  display: block;
+}
+
 .ticket-form__actions {
   display: flex;
+  gap: 0.75rem;
   justify-content: flex-end;
 }
 

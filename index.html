@@ -163,31 +163,97 @@
           <p class="content-section__description">
             Informe os dados da solicitação de suporte.
           </p>
+          <p class="form-required-note">
+            <span aria-hidden="true">*</span> Campos marcados são obrigatórios.
+          </p>
 
           <form id="form-chamado" class="ticket-form">
+            <input id="id-chamado" name="id" type="hidden" />
+
             <div class="form-field form-field--full">
-              <label for="titulo">Título</label>
-              <input id="titulo" name="titulo" type="text" />
+              <label for="titulo">
+                Título <span class="required-marker" aria-hidden="true">*</span>
+              </label>
+              <input
+                id="titulo"
+                name="titulo"
+                type="text"
+                aria-describedby="erro-titulo"
+                required
+              />
+              <span id="erro-titulo" class="form-field__error" aria-live="polite">
+                Informe o título.
+              </span>
             </div>
 
             <div class="form-field">
-              <label for="solicitante">Solicitante</label>
-              <input id="solicitante" name="solicitante" type="text" />
+              <label for="solicitante">
+                Solicitante <span class="required-marker" aria-hidden="true">*</span>
+              </label>
+              <input
+                id="solicitante"
+                name="solicitante"
+                type="text"
+                aria-describedby="erro-solicitante"
+                required
+              />
+              <span
+                id="erro-solicitante"
+                class="form-field__error"
+                aria-live="polite"
+              >
+                Informe o solicitante.
+              </span>
             </div>
 
             <div class="form-field">
-              <label for="categoria">Categoria</label>
-              <input id="categoria" name="categoria" type="text" />
+              <label for="categoria">
+                Categoria <span class="required-marker" aria-hidden="true">*</span>
+              </label>
+              <select
+                id="categoria"
+                name="categoria"
+                aria-describedby="erro-categoria"
+                required
+              >
+                <option value="">Selecione</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="rede">Rede</option>
+                <option value="acesso">Acesso</option>
+                <option value="outros">Outros</option>
+              </select>
+              <span
+                id="erro-categoria"
+                class="form-field__error"
+                aria-live="polite"
+              >
+                Selecione a categoria.
+              </span>
             </div>
 
             <div class="form-field">
-              <label for="prioridade">Prioridade</label>
-              <select id="prioridade" name="prioridade">
+              <label for="prioridade">
+                Prioridade <span class="required-marker" aria-hidden="true">*</span>
+              </label>
+              <select
+                id="prioridade"
+                name="prioridade"
+                aria-describedby="erro-prioridade"
+                required
+              >
                 <option value="">Selecione</option>
                 <option value="baixa">Baixa</option>
                 <option value="media">Média</option>
                 <option value="alta">Alta</option>
               </select>
+              <span
+                id="erro-prioridade"
+                class="form-field__error"
+                aria-live="polite"
+              >
+                Selecione a prioridade.
+              </span>
             </div>
 
             <div class="form-field">
@@ -196,12 +262,37 @@
             </div>
 
             <div class="form-field form-field--full">
-              <label for="descricao">Descrição</label>
-              <textarea id="descricao" name="descricao" rows="5"></textarea>
+              <label for="descricao">
+                Descrição <span class="required-marker" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="descricao"
+                name="descricao"
+                rows="5"
+                aria-describedby="erro-descricao"
+                required
+              ></textarea>
+              <span
+                id="erro-descricao"
+                class="form-field__error"
+                aria-live="polite"
+              >
+                Informe a descrição.
+              </span>
             </div>
 
             <div class="ticket-form__actions form-field--full">
-              <button class="primary-button" type="submit">Salvar chamado</button>
+              <button
+                id="cancelar-edicao"
+                class="secondary-button"
+                type="button"
+                hidden
+              >
+                Cancelar edição
+              </button>
+              <button id="salvar-chamado" class="primary-button" type="submit">
+                Salvar chamado
+              </button>
             </div>
           </form>
         </section>
