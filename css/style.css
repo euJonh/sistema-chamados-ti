@@ -1,4 +1,4 @@
-/* Configurações gerais */
+/* Configurações gerais de cores */
 :root {
   --color-primary: #0b5cad;
   --color-primary-dark: #084780;
@@ -106,12 +106,18 @@ a:focus-visible,
   padding: 0.75rem 1rem;
   color: var(--color-text);
   text-decoration: none;
+  border-left: 0.25rem solid transparent;
   border-radius: 0.375rem;
 }
 
-.main-navigation__link:hover {
+.main-navigation__link:hover,
+body:not(:has(#novo-chamado:target))
+  .main-navigation__link[href="#chamados"],
+body:has(#novo-chamado:target)
+  .main-navigation__link[href="#novo-chamado"] {
   color: var(--color-primary-dark);
   background-color: #e8f1fa;
+  border-left-color: var(--color-primary);
 }
 
 .main-content {
@@ -120,6 +126,7 @@ a:focus-visible,
 }
 
 .content-section {
+  display: none;
   max-width: 75rem;
   padding: 2rem;
   margin: 0 auto;
@@ -129,14 +136,24 @@ a:focus-visible,
   border-radius: 0.5rem;
 }
 
+.content-section:focus-visible {
+  outline: 0.125rem solid var(--color-primary);
+  outline-offset: -0.125rem;
+}
+
+#chamados,
+.content-section:target {
+  display: block;
+}
+
+.main-content:has(#novo-chamado:target) #chamados {
+  display: none;
+}
+
 .content-section h1,
 .content-section h2 {
   margin: 0;
   font-size: 1.75rem;
-}
-
-.content-section + .content-section {
-  margin-top: 1.5rem;
 }
 
 .content-section__description {
@@ -491,7 +508,16 @@ a:focus-visible,
   }
 
   .main-navigation__link {
+    border-bottom: 0.1875rem solid transparent;
+    border-left: 0;
     text-align: center;
+  }
+
+  body:not(:has(#novo-chamado:target))
+    .main-navigation__link[href="#chamados"],
+  body:has(#novo-chamado:target)
+    .main-navigation__link[href="#novo-chamado"] {
+    border-bottom-color: var(--color-primary);
   }
 
   .main-content {
