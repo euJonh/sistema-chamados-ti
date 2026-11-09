@@ -111,7 +111,7 @@ sistema-chamados-ti/
 | Igor Fagundes Batista | A definir | Testes e validações |
 | Herica Franklin Ramalho | A definir | Documentação |
 | Vitor Hugo Benatti Pedrassolli | A definir | A definir |
-| Mateus Malezan Tasquetto | A definir | Cadastro de chamados |
+| Mateus Malezan Tasquetto | [@mateustasquetto](https://github.com/mateustasquetto) | Cadastro de chamados |
 | Rafael Pereira Caires Pires | [@rafaelcairess](https://github.com/rafaelcairess) | HTML, CSS e GitHub |
 | João Vitor Oliveira Goncalves | A definir | Status, prioridade e filtros |
 
@@ -133,6 +133,15 @@ A implementação foi dividida em áreas para facilitar o desenvolvimento em gru
 | Organização do GitHub | Rafael Pereira Caires Pires |
 
 A divisão poderá ser ajustada conforme o desenvolvimento e a disponibilidade dos integrantes.
+
+## Integração entre as partes
+
+- Mateus deve utilizar `#form-chamado` para o cadastro.
+- Sheila deve utilizar `#lista-chamados` e `#modelo-linha-chamado` para a listagem.
+- João deve utilizar `#busca-chamados`, `#filtro-status` e `#filtro-prioridade` para os filtros.
+- A edição deve utilizar `data-action="editar"` e `#cancelar-edicao`.
+- A exclusão deve utilizar `data-action="excluir"` e `#confirmacao-exclusao`.
+- Igor deve utilizar os campos com `required` e as mensagens `.form-field__error` para as validações.
 
 ## Andamento
 
@@ -187,5 +196,3 @@ Os materiais de planejamento e desenvolvimento ficam na pasta [`docs`](docs/).
 - [Requisitos](docs/requisitos.md)
 - [Planejamento](docs/planejamento.md)
 - [Decisões do projeto](docs/decisoes.md)
-
-As orientações para alterações no repositório estão em [`CONTRIBUTING.md`](CONTRIBUTING.md).

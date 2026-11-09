@@ -52,7 +52,7 @@
             Lista de chamados de suporte de TI.
           </p>
 
-          <!-- Pesquisa e filtros: a lógica será adicionada em JavaScript -->
+          <!-- Status, prioridade e filtros - lógica JavaScript: João -->
           <form
             id="filtros-chamados"
             class="ticket-filters"
@@ -118,6 +118,7 @@
                   <th scope="col">Ações</th>
                 </tr>
               </thead>
+              <!-- Listagem de chamados - preenchimento via JavaScript: Sheila -->
               <tbody id="lista-chamados">
                 <tr>
                   <td class="tickets-table__empty" colspan="5">
@@ -128,7 +129,7 @@
             </table>
           </section>
 
-          <!-- Modelo usado futuramente pela listagem em JavaScript -->
+          <!-- Modelo da listagem - uso via JavaScript: Sheila -->
           <template id="modelo-linha-chamado">
             <tr>
               <td class="ticket-number"></td>
@@ -140,6 +141,7 @@
                 <span class="ticket-badge" data-status></span>
               </td>
               <td>
+                <!-- Edição e exclusão - lógica JavaScript: responsável a definir -->
                 <div class="ticket-actions">
                   <button
                     class="action-button action-button--edit"
@@ -161,7 +163,7 @@
           </template>
         </section>
 
-        <!-- Formulário de cadastro -->
+        <!-- Cadastro de chamados - lógica JavaScript/LocalStorage: Mateus -->
         <section
           id="novo-chamado"
           class="content-section"
@@ -179,6 +181,7 @@
           <form id="form-chamado" class="ticket-form">
             <input id="id-chamado" name="id" type="hidden">
 
+            <!-- Campos obrigatórios e mensagens - validações: Igor -->
             <div class="form-field form-field--full">
               <label for="titulo">
                 Título <span class="required-marker" aria-hidden="true">*</span>
@@ -308,7 +311,7 @@
       </main>
     </div>
 
-    <!-- Confirmação usada futuramente pela exclusão em JavaScript -->
+    <!-- Edição e exclusão - confirmação via JavaScript: responsável a definir -->
     <dialog
       id="confirmacao-exclusao"
       class="confirmation-dialog"
