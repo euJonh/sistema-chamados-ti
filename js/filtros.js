@@ -10,20 +10,11 @@ const ROTULOS_PRIORIDADE = {
   alta: "Alta",
 };
 
-function lerChamados() {
-  try {
-    const chamados = JSON.parse(localStorage.getItem("chamados"));
-    return Array.isArray(chamados) ? chamados : [];
-  } catch (erro) {
-    return [];
-  }
-}
-
 // Remove acentos e maiúsculas para que "manutencao" encontre "Manutenção".
 function normalizarTexto(texto) {
   return String(texto ?? "")
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
 }
@@ -52,7 +43,7 @@ function aplicarFiltros() {
     prioridade: document.getElementById("filtro-prioridade").value,
   };
 
-  const chamadosFiltrados = filtrarChamados(lerChamados(), filtros);
+  const chamadosFiltrados = filtrarChamados(obterChamados(), filtros);
 
   // A listagem escuta este evento para redesenhar a tabela.
   document.dispatchEvent(
@@ -67,6 +58,5 @@ formularioFiltros.addEventListener("submit", (evento) => {
   aplicarFiltros();
 });
 formularioFiltros.addEventListener("input", aplicarFiltros);
-formularioFiltros.addEventListener("change", aplicarFiltros);
 
 aplicarFiltros();
